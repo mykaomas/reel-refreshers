@@ -10,3 +10,7 @@ WHEN user selects genre
 THEN a randomized movie is selected based on genre
 WHEN a movie is selected 
 THEN a randomized cocktail is paired with the movie
+
+
+
+

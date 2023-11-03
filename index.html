@@ -21,33 +21,50 @@
     <header class="text-center py-8">
         <h1 class="text-6xl font-bold tracking-wider bg-gradient-to-r from-pink-500 via-yellow-500 to-green-500 p-4 inline-block shadow-lg transform rotate-3">ReelRefreshers</h1>
     </header>
+    <main>
     <section>
-        <video height="150px" width="300px" controls><source src="Videos/vecteezy_time-lapse-clouds-cross-monument-valley-national-monument-in_13008323_772.mp4" type="video/mp4"</video>
+        <button onclick="getSuggestion()"><a class='results' href='results.html'><span id='action-text'><h2>ACTION</h2></span>
+        <img class='size' id='action' src="Assets/GIFs/Mission impossible - Action.gif" />
+        </a></button>
+        <button onclick="getSuggestion()"><a class='results' href='results.html'><span id='comedy-text'><h2>COMEDY</h2></span>
+        <img id='comedy' class='size' src="Assets/GIFs/Ace Venture - Comedy.gif" />
+        </a></button>
+        <button onclick="getSuggestion()"><a class='results' href='results.html'><span id='romance-text'><h2>ROMANCE</h2></span>
+        <img class='size' src="Assets/GIFs/Titanic- Romance.gif" />
+        </a></button>
+        <button onclick="getSuggestion()"><a class='results' href='results.html'><span id='horror-text'><h2>HORROR</h2></span>
+        <img class='size' src="Assets/GIFs/Scream - Horror.gif" />
+        </a></button>
+        <button onclick="getSuggestion()"><a class='results' href='results.html'><span id='western-text'><h2>WESTERN</h2></span>
+        <img class='size' src="Assets/GIFs/The Good The Bad and The Ugly - Western.gif" />
+        </a></button>
+        <button onclick="getSuggestion()"><a class='results' href='results.html'><span id='drama-text'><h2>DRAMA</h2></span>
+        <img class='size' src="Assets/GIFs/Godfather - Drama.gif" />
+        </a></button>
+        <button onclick="getSuggestion()"><a class='results' href='results.html'><span id='science-text'><h2>SCIENCE FICTION</h2></span>
+        <img class='size' src="Assets/GIFs/Arrival- Science Fiction.gif" />
+        </a></button>
+        <button onclick="getSuggestion()"><a class='results' href='results.html'><span id='thriller-text'><h2>THRILLER</h2></span>
+        <img class='size' src="Assets/GIFs/Joker - Thriller.gif" />
+        </a></button>
+        <button onclick="getSuggestion()"><a class='results' href='results.html'><span id='animation-text'><h2>ANIMATION</h2></span>
+        <img class='size' src="Assets/GIFs/Toy Story - Animation.gif" />
+        </a></button>
+        <button onclick="getSuggestion()"><a class='results' href='results.html'><span id='mystery-text'><h2>MYSTERY</h2></span>
+        <img class='size' src="Assets/GIFs/Sherlock Holmes - Mystery.gif" />
+        </a></button>
+        <button onclick="getSuggestion()"><a class='results' href='results.html'><span id='documentary-text'><h2>DOCUMENTARY</h2></span>
+        <img class='size' src="Assets/GIFs/documentary.gif" />
+        </a></button>
+        <button onclick="getSuggestion()"><a class='results' href='results.html'><span id='fantasy-text'><h2>FANTASY</h2></span>
+        <img class='size' src="Assets/GIFs/Never Ending Story - Fantasy.gif" />
+        </a></button>
     </section>
-
-    <main class="flex-1 p-4 flex flex-col items-center space-y-4">
-        <div>
-            <label for="genre" class="text-lg">Choose a genre: </label>
-            <select id="genre" class="p-2 rounded bg-white text-black">
-                <option value="28">Action</option>
-                <option value="35">Comedy</option>
-                <option value="35">Romance</option>
-                <option value="35">Horror</option>
-                <option value="35">Western</option>
-                <option value="35">Drama</option>
-                <option value="35">Science Fiction</option>
-                <option value="35">Thriller</option>
-                <option value="35">Animation</option>
-                <option value="35">Mystery</option> 
-                <!-- Add more genres as per TMDB API -->
-            </select>
-        </div>
         <button onclick="getSuggestion()" class="text-2xl bg-green-500 hover:bg-green-400 p-4 rounded-lg shadow-lg transition transform hover:scale-105">Get a Movie & Drink</button>
         <h3 id="chosenMovie"></h3>
         <img id="moviePoster">
         <h3 id="chosenDrink"></h3>
         <img id="drinkPhoto">
-        
     </main>
 
     <footer class="text-center py-4">
@@ -55,6 +72,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="GIF-control.js"></script>
 
 </body>
 
