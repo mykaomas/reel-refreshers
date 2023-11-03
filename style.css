@@ -1,1 +1,96 @@
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.size {
+    height: 175px;
+    width: 325px; 
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 0 2%;
+    margin: 5% 20%;
+}
+
+img {
+    position: relative;
+}
+
+.results #action-text, .results #comedy-text, .results #romance-text, .results #horror-text, .results #western-text, .results #drama-text, .results #science-text, .results #thriller-text, .results #animation-text, .results #mystery-text, .results #documentary-text, .results #fantasy-text {
+    opacity: 0; 
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    font-weight: bold;
+    background-color: black;
+    }
+
+.results #action-text {		
+    top: 1000px;
+    left: 150px;
+}
+
+.results #comedy-text {	
+    top: 230px;
+    left: 480px;
+}
+
+.results #romance-text {		
+    top: 230px;
+    left: 780px;
+}
+
+.results #horror-text {		
+    top: 230px;
+    left: 1120px;
+}
+
+.results #western-text {		
+    top: 450px;
+    left: 120px;
+}
+
+.results #drama-text {		
+    top: 450px;
+    left: 500px;;
+}
+
+.results #science-text {		
+    top: 450px;
+    left: 725px;
+}
+
+.results #thriller-text {		
+    top: 450px;
+    left: 1130px;
+}
+
+.results #animation-text {		
+    top: 650px;
+    left: 130px;
+}
+
+.results #mystery-text {		
+    top: 650px;
+    left: 475px;
+}
+
+.results #documentary-text {	
+    top: 650px;
+    left: 750px;
+}
+
+.results #fantasy-text {	
+    top: 650px;
+    left: 1120px;
+}
+
+.results #action-text h2, .results #comedy-text h2, .results #romance-text h2, .results #horror-text h2, .results #western-text h2, .results #drama-text h2, .results #science-text h2, .results #thriller-text h2, .results #animation-text h2, .results #mystery-text h2, .results #documentary-text h2, .results #fantasy-text h2 {
+    margin: 0;	
+    bottom: 25px;	
+	color: white;
+}
+
+.results:hover #action-text, .results:hover #comedy-text, .results:hover #romance-text, .results:hover #horror-text, .results:hover #western-text, .results:hover #drama-text, .results:hover #science-text, .results:hover #thriller-text, .results:hover #animation-text, .results:hover #mystery-text, .results:hover #documentary-text, .results:hover #fantasy-text {
+    opacity: 1;
+}
