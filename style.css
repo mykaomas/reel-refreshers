@@ -3,6 +3,7 @@ section {
     flex-wrap: wrap;
 }
 
+/* Styles for the GIF images */
 .size {
     height: 175px;
     width: 325px; 
@@ -16,17 +17,19 @@ figure {
     position: relative;
 }
 
+/* Styling the genre titles */
 #action figcaption, #comedy figcaption, #romance figcaption, #horror figcaption, #western figcaption, #drama figcaption, #science figcaption, #thriller figcaption, #animation figcaption, #mystery figcaption, #documentary figcaption, #fantasy figcaption, #war figcaption, #family figcaption, #tv figcaption, #adventure figcaption, #history figcaption, #music figcaption, #crime figcaption, #random figcaption {
     position: absolute;
     font-size: 30px;
     font-family:Arial, Helvetica, sans-serif;
     letter-spacing: 10px;
-    color: antiquewhite;
+    color: white;
     font-weight: bold;
-    text-shadow: 0 50px 100px rgb(0, 0, 0, 1);
+    text-shadow: 0 30px 50px rgba(0, 0, 0, 1);
     mix-blend-mode: overlay;
 }
 
+/* Controls the positioning of genre titles */
 #action figcaption {
     top: 130px;
     left: 150px;
