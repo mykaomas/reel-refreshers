@@ -29,7 +29,7 @@ figure {
     mix-blend-mode: overlay;
 }
 
-/* Controls the positioning of genre titles */
+/* Controls the positioning of each of the genre titles */
 #action figcaption {
     top: 130px;
     left: 150px;
