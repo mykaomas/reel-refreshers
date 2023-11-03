@@ -1,4 +1,5 @@
-section {
+/* Stying for genre container */
+section #genre-container {
     display: flex;
     flex-wrap: wrap;
 }
@@ -135,4 +136,24 @@ figure {
 /* Hide and unhide containers */
 .hidden {
     display: none;
+}
+
+/* Styling for the results container */
+#moviePoster, #drinkPhoto {
+    width: 300px;
+    height: 400px;
+    margin: 5%;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px whitesmoke;
+}
+
+section#drinks {
+    margin-top: 500px;
+    margin-left: 5%;
+}
+
+p {
+    font-size: 25px;
+    padding: 10px;
+    font-family:Arial, Helvetica, sans-serif;
 }
