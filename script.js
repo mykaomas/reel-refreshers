@@ -1,5 +1,5 @@
 //apiKey = d999ebd26747e0c3f46ea86ac84f73f3
-const genreSelect = document.getElementById('genre');
+const genreSelect = document.getElementsByClassName('genre');
 const posterImage = document.getElementById('moviePoster');
 
 function getRandomNumber(max) {

@@ -131,3 +131,8 @@ figure {
     top: 130px;
     left: 140px;
 }
+
+/* Hide and unhide containers */
+.hidden {
+    display: none;
+}
