@@ -38,7 +38,6 @@ figure {
     color: white;
     font-weight: bold;
     text-shadow: 0 30px 50px rgba(0, 0, 0, 1);
-    mix-blend-mode: overlay;
 }
 
 /* Controls the positioning of each of the genre titles */
