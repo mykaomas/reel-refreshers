@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReelRefreshers</title>
+    <!-- Linked Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <style>
+        /* Puts animated icons before and after banner text includes styling*/
         h1:before,
         h1:after {
             content: '🎞️';
@@ -16,51 +18,140 @@
     </style>
 </head>
 
+<!-- Styling for background of page -->
 <body class="bg-indigo-900 text-white min-h-screen flex flex-col justify-between">
 
+    <!-- Styling for banner -->
     <header class="text-center py-8">
         <h1 class="text-6xl font-bold tracking-wider bg-gradient-to-r from-pink-500 via-yellow-500 to-green-500 p-4 inline-block shadow-lg transform rotate-3">ReelRefreshers</h1>
     </header>
     <main>
     <section>
-        <button onclick="getSuggestion()"><a class='results' href='results.html'><span id='action-text'><h2>ACTION</h2></span>
-        <img class='size' id='action' src="Assets/GIFs/Mission impossible - Action.gif" />
-        </a></button>
-        <button onclick="getSuggestion()"><a class='results' href='results.html'><span id='comedy-text'><h2>COMEDY</h2></span>
-        <img id='comedy' class='size' src="Assets/GIFs/Ace Venture - Comedy.gif" />
-        </a></button>
-        <button onclick="getSuggestion()"><a class='results' href='results.html'><span id='romance-text'><h2>ROMANCE</h2></span>
-        <img class='size' src="Assets/GIFs/Titanic- Romance.gif" />
-        </a></button>
-        <button onclick="getSuggestion()"><a class='results' href='results.html'><span id='horror-text'><h2>HORROR</h2></span>
-        <img class='size' src="Assets/GIFs/Scream - Horror.gif" />
-        </a></button>
-        <button onclick="getSuggestion()"><a class='results' href='results.html'><span id='western-text'><h2>WESTERN</h2></span>
-        <img class='size' src="Assets/GIFs/The Good The Bad and The Ugly - Western.gif" />
-        </a></button>
-        <button onclick="getSuggestion()"><a class='results' href='results.html'><span id='drama-text'><h2>DRAMA</h2></span>
-        <img class='size' src="Assets/GIFs/Godfather - Drama.gif" />
-        </a></button>
-        <button onclick="getSuggestion()"><a class='results' href='results.html'><span id='science-text'><h2>SCIENCE FICTION</h2></span>
-        <img class='size' src="Assets/GIFs/Arrival- Science Fiction.gif" />
-        </a></button>
-        <button onclick="getSuggestion()"><a class='results' href='results.html'><span id='thriller-text'><h2>THRILLER</h2></span>
-        <img class='size' src="Assets/GIFs/Joker - Thriller.gif" />
-        </a></button>
-        <button onclick="getSuggestion()"><a class='results' href='results.html'><span id='animation-text'><h2>ANIMATION</h2></span>
-        <img class='size' src="Assets/GIFs/Toy Story - Animation.gif" />
-        </a></button>
-        <button onclick="getSuggestion()"><a class='results' href='results.html'><span id='mystery-text'><h2>MYSTERY</h2></span>
-        <img class='size' src="Assets/GIFs/Sherlock Holmes - Mystery.gif" />
-        </a></button>
-        <button onclick="getSuggestion()"><a class='results' href='results.html'><span id='documentary-text'><h2>DOCUMENTARY</h2></span>
-        <img class='size' src="Assets/GIFs/documentary.gif" />
-        </a></button>
-        <button onclick="getSuggestion()"><a class='results' href='results.html'><span id='fantasy-text'><h2>FANTASY</h2></span>
-        <img class='size' src="Assets/GIFs/Never Ending Story - Fantasy.gif" />
-        </a></button>
+        <!-- Action Icon -->
+        <!-- Currently testing out how to link results to image -->
+        <div id='genre'>
+        <button onclick="getSuggestion()">
+        <figure id='action'><img class='size' src="Assets/GIFs/Mission impossible - Action.gif" alt="spy descending from ceiling with gadget" />
+        <figcaption>ACTION</figcaption>
+        </figure></button>
+            </div>
+
+        <!-- Comedy Icon -->
+        <button onclick="getSuggestion()"><a class='results' href='results.html'>
+        <figure id='comedy'><img id='comedy' class='size' src="Assets/GIFs/Ace Venture - Comedy.gif" alt="man in swimming pool getting closer to the camera"/>
+        <figcaption>COMEDY</figcaption>
+        </figure></a></button>
+
+        <!-- Romance Icon -->
+        <button onclick="getSuggestion()"><a class='results' href='results.html'>
+        <figure id="romance"><img class='size' src="Assets/GIFs/Notebook - Romance.gif" alt="man kissing woman in the rain"/>
+        <figcaption>ROMANCE</figcaption>
+        </figure></a></button>
+
+        <!-- Horror Icon -->
+        <button onclick="getSuggestion()"><a class='results' href='results.html'>
+        <figure id="horror"><img class='size' src="Assets/GIFs/Shining - Horror.gif" alt="man with his face through a door with a malicious look on his face"/>
+        <figcaption>HORROR</figcaption>
+        </figure></a></button>
+
+        <!-- Western Icon -->
+        <button onclick="getSuggestion()"><a class='results' href='results.html'>
+        <figure id="western"><img class='size' src="Assets/GIFs/The Good The Bad and The Ugly - Western.gif" alt="three men looking at eachother suspiciously"/>
+        <figcaption>WESTERN</figcaption>
+        </figure></a></button>
+
+        <!-- Drama Icon -->
+        <button onclick="getSuggestion()"><a class='results' href='results.html'>
+        <figure id='drama'><img class='size' src="Assets/GIFs/Green Mile - Drama.gif" alt="a man being escorted by four officers down a prison corridor"/>
+        <figcaption>DRAMA</figcaption>
+        </figure></a></button>
+
+        <!-- Science Fiction Icon -->
+        <button onclick="getSuggestion()"><a class='results' href='results.html'>
+        <figure id='science'><img class='size' src="Assets/GIFs/Arrival- Science Fiction.gif" alt="two people trying to communicate with an alien species when a tentacle springs out"/>
+        <figcaption>SCIENCE FICTION</figcaption>
+        </figure></a></button>
+
+        <!-- Thriller -->
+        <button onclick="getSuggestion()"><a class='results' href='results.html'>
+        <figure id='thriller'><img class='size' src="Assets/GIFs/Joker - Thriller.gif" alt="man dressed as a clown on a subway laughing maniacally"/>
+        <figcaption>THRILLER</figcaption>
+        </figure></a></button>
+
+        <!-- Animation Icon -->
+        <button onclick="getSuggestion()"><a class='results' href='results.html'>
+        <figure id='animation'><img class='size' src="Assets/GIFs/Toy Story - Animation.gif" alt="group of toys on a porch"/>
+        <figcaption>ANIMATION</figcaption>
+        </figure></a></button>
+
+        <!-- Mystery Icon -->
+        <button onclick="getSuggestion()"><a class='results' href='results.html'>
+        <figure id='mystery'><img class='size' src="Assets/GIFs/Knives Out - Mystery.gif" alt="a group of people looking up distrustfully"/>
+        <figcaption>MYSTERY</figcaption>
+        </figure></a></button>
+
+        <!-- Documentary Icon -->
+        <button onclick="getSuggestion()"><a class='results' href='results.html'>
+        <figure id='documentary'><img class='size' src="Assets/GIFs/documentary.gif" alt="an overview of a forest"/>
+        <figcaption>DOCUMENTARY</figcaption>
+        </figure></a></button>
+
+        <!-- Fantasy Icon -->
+        <button onclick="getSuggestion()"><a class='results' href='results.html'>
+        <figure id='fantasy'><img class='size' src="Assets/GIFs/Never Ending Story - Fantasy.gif" alt="a friendly, fluffy, pink dragon"/>
+        <figcaption>FANTASY</figcaption>
+        </figure></a></button>
+
+        <!-- War Icon -->
+        <button onclick="getSuggestion()"><a class='results' href='results.html'>
+        <figure id='war'><img class='size' src="Assets/GIFs/Full Metal Jacket - War.gif" alt="a sergeant speaking to a group of soldiers sitting on bleaches"/>
+        <figcaption>WAR</figcaption>
+        </figure></a></button>
+
+        <!-- Family Icon -->
+        <button onclick="getSuggestion()"><a class='results' href='results.html'>
+        <figure id='family'><img class='size' src="Assets/GIFs/Finding Nemo - Family.gif" alt="two fish talking to themselves"/>
+        <figcaption>FAMILY</figcaption>
+        </figure></a></button>
+
+        <!-- TV Movie Icon -->
+        <button onclick="getSuggestion()"><a class='results' href='results.html'>
+        <figure id='tv'><img class='size' src="Assets/GIFs/Flowers in the Atiic - TV Movie.gif" alt="a man looking at a woman with disdain"/>
+        <figcaption>TV MOVIE</figcaption>
+        </figure></a></button>
+
+        <!-- Adventure Icon -->
+        <button onclick="getSuggestion()"><a class='results' href='results.html'>
+        <figure id='adventure'><img class='size' src="Assets/GIFs/Life of Pi - Adventure.gif" alt="a boy and a roaring tiger on a boat"/>
+        <figcaption>ADVENTURE</figcaption>
+        </figure></a></button>
+
+        <!-- History Icon -->
+        <button onclick="getSuggestion()"><a class='results' href='results.html'>
+        <figure id='history'><img class='size' src="Assets/GIFs/Napoleon - History.gif" alt="a king"/>
+        <figcaption>HISTORY</figcaption>
+        </figure></a></button>
+
+        <!-- Music Icon -->
+        <button onclick="getSuggestion()"><a class='results' href='results.html'>
+        <figure id='music'><img class='size' src="Assets/GIFs/Sound of Music - Music.gif" alt="a woman in a valley dancing"/>
+        <figcaption>MUSIC</figcaption>
+        </figure></a></button>
+
+        <!-- Crime Icon -->
+        <button onclick="getSuggestion()"><a class='results' href='results.html'>
+        <figure id='crime'><img class='size' src="Assets/GIFs/Scareface - Crime.gif" alt="a man with a white substance on his nose"/>
+        <figcaption>CRIME</figcaption>
+        </figure></a></button>
+
+        <!-- Random Icon -->
+        <button onclick="getSuggestion()"><a class='results' href='results.html'>
+        <figure id='random'><img class='size' src="Assets/GIFs/random.gif" alt="question marks"/>
+        <figcaption>RANDOM</figcaption>
+        </figure></a></button>
     </section>
-        <button onclick="getSuggestion()" class="text-2xl bg-green-500 hover:bg-green-400 p-4 rounded-lg shadow-lg transition transform hover:scale-105">Get a Movie & Drink</button>
+        <!-- Pulls random movie w/ its poster based on selected genre and random drink w/ image and ingredients -->
+        <!-- <button onclick="getSuggestion()" class="text-2xl bg-green-500 hover:bg-green-400 p-4 rounded-lg shadow-lg transition transform hover:scale-105">Get a Movie & Drink</button> -->
         <h3 id="chosenMovie"></h3>
         <img id="moviePoster">
         <h3 id="chosenDrink"></h3>
@@ -72,7 +163,6 @@
     </footer>
 
     <script src="script.js"></script>
-    <script src="GIF-control.js"></script>
 
 </body>
 

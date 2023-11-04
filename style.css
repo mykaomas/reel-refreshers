@@ -3,6 +3,7 @@ section {
     flex-wrap: wrap;
 }
 
+/* Styles for the GIF images */
 .size {
     height: 175px;
     width: 325px; 
@@ -12,85 +13,121 @@ section {
     margin: 5% 20%;
 }
 
-img {
+figure {
     position: relative;
 }
 
-.results #action-text, .results #comedy-text, .results #romance-text, .results #horror-text, .results #western-text, .results #drama-text, .results #science-text, .results #thriller-text, .results #animation-text, .results #mystery-text, .results #documentary-text, .results #fantasy-text {
-    opacity: 0; 
+/* Styling the genre titles */
+#action figcaption, #comedy figcaption, #romance figcaption, #horror figcaption, #western figcaption, #drama figcaption, #science figcaption, #thriller figcaption, #animation figcaption, #mystery figcaption, #documentary figcaption, #fantasy figcaption, #war figcaption, #family figcaption, #tv figcaption, #adventure figcaption, #history figcaption, #music figcaption, #crime figcaption, #random figcaption {
+    position: absolute;
     font-size: 30px;
     font-family:Arial, Helvetica, sans-serif;
-    letter-spacing: 3px;
+    letter-spacing: 10px;
+    color: white;
     font-weight: bold;
-    background-color: black;
-    }
+    text-shadow: 0 30px 50px rgba(0, 0, 0, 1);
+    mix-blend-mode: overlay;
+}
 
-.results #action-text {		
-    top: 1000px;
+/* Controls the positioning of each of the genre titles */
+#action figcaption {
+    top: 130px;
     left: 150px;
 }
 
-.results #comedy-text {	
-    top: 230px;
-    left: 480px;
+#comedy figcaption {
+    top: 130px; 
+    left: 150px;
 }
 
-.results #romance-text {		
-    top: 230px;
-    left: 780px;
-}
-
-.results #horror-text {		
-    top: 230px;
-    left: 1120px;
-}
-
-.results #western-text {		
-    top: 450px;
-    left: 120px;
-}
-
-.results #drama-text {		
-    top: 450px;
-    left: 500px;;
-}
-
-.results #science-text {		
-    top: 450px;
-    left: 725px;
-}
-
-.results #thriller-text {		
-    top: 450px;
-    left: 1130px;
-}
-
-.results #animation-text {		
-    top: 650px;
+#romance figcaption {
+    top: 130px; 
     left: 130px;
 }
 
-.results #mystery-text {		
-    top: 650px;
-    left: 475px;
+#horror figcaption {
+    position: absolute;
+    top: 130px; 
+    left: 140px;
 }
 
-.results #documentary-text {	
-    top: 650px;
-    left: 750px;
+#western figcaption {
+    top: 130px; 
+    left: 125px;
 }
 
-.results #fantasy-text {	
-    top: 650px;
-    left: 1120px;
+#drama figcaption {
+    top: 130px; 
+    left: 170px;
 }
 
-.results #action-text h2, .results #comedy-text h2, .results #romance-text h2, .results #horror-text h2, .results #western-text h2, .results #drama-text h2, .results #science-text h2, .results #thriller-text h2, .results #animation-text h2, .results #mystery-text h2, .results #documentary-text h2, .results #fantasy-text h2 {
-    margin: 0;	
-    bottom: 25px;	
-	color: white;
+#science figcaption {
+    top: 70px; 
+    left: 130px;
 }
 
-.results:hover #action-text, .results:hover #comedy-text, .results:hover #romance-text, .results:hover #horror-text, .results:hover #western-text, .results:hover #drama-text, .results:hover #science-text, .results:hover #thriller-text, .results:hover #animation-text, .results:hover #mystery-text, .results:hover #documentary-text, .results:hover #fantasy-text {
-    opacity: 1;
+#thriller figcaption {
+    top: 130px; 
+    left: 120px;
+}
+
+#animation figcaption {
+    top: 130px; 
+    left: 100px;
+}
+
+#mystery figcaption {
+    top: 130px; 
+    left: 130px;
+}
+
+#documentary figcaption {
+    top: 130px; 
+    left: 80px;
+    letter-spacing: 6px;
+}
+
+#fantasy figcaption {
+    top: 130px; 
+    left: 130px;
+}
+
+#war figcaption {
+    top: 130px; 
+    left: 175px;
+}
+
+#family figcaption {
+    top: 130px; 
+    left: 150px;
+}
+
+#tv figcaption {
+    top: 80px; 
+    left: 130px;
+}
+
+#adventure figcaption {
+    top: 130px; 
+    left: 100px;
+}
+
+#history figcaption {
+    top: 130px; 
+    left: 140px;
+}
+
+#music figcaption {
+    top: 130px; 
+    left: 170px;
+}
+
+#crime figcaption {
+    top: 130px; 
+    left: 150px;
+}
+
+#random figcaption {
+    top: 130px;
+    left: 140px;
 }
