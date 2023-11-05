@@ -1,11 +1,11 @@
 //apiKey = d999ebd26747e0c3f46ea86ac84f73f3
-const genreSelect = document.getElementsByClassName('genre');
 const posterImage = document.getElementById('moviePoster');
 
 function getRandomNumber(max) {
   return Math.floor(Math.random() * max) + 1;
 }
 
+// Gets movie data genre from API to include: poster, title, and summary
 function fetchMovieData(genreId) {
 
   const pageNumber = getRandomNumber(20);
@@ -24,6 +24,7 @@ function fetchMovieData(genreId) {
       console.log(chosenMovie.poster_path);
       console.log(chosenMovie);
 
+      // Displays movie title
       const chosenMovieEl = document.getElementById('chosenMovie');
       chosenMovieEl.textContent = `Movie: ${chosenMovie.title}`;
 
@@ -36,6 +37,7 @@ function fetchMovieData(genreId) {
     });
 }
 
+//  Gets random drink w/ name and instructions
 function fetchRandomDrink() {
   const url = 'https://www.thecocktaildb.com/api/json/v1/1/random.php';
 
@@ -46,8 +48,10 @@ function fetchRandomDrink() {
       var drinkImg = data.drinks[0].strDrinkThumb
       console.log(drinkImg)
       const chosenDrink = data.drinks[0].strDrink;
+      // Displays drink photot
       const drinkPhotoEl = document.getElementById('drinkPhoto')
       drinkPhotoEl.src = drinkImg
+      // Displays instructions to make drink
       const chosenDrinkEl = document.getElementById("chosenDrink");
       chosenDrinkEl.textContent = `Drink: ${chosenDrink} - ${data.drinks[0].strInstructions}`;
     })
@@ -56,6 +60,8 @@ function fetchRandomDrink() {
     });
 }
 
+// Once one of the buttons are clicked the genre id linked to the button will be display
+// the chosen genre w/ drink
 function getSuggestion(button) {
   const selectedGenre = button.getAttribute('genre-id');
 
