@@ -25,10 +25,12 @@
     <header id='banner' class="text-center py-8">
         <h1 class="text-6xl font-bold tracking-wider bg-gradient-to-r from-pink-500 via-yellow-500 to-green-500 p-4 inline-block shadow-lg transform rotate-3">ReelRefreshers</h1>
     </header>
-    <!-- Slogan -->
-    <section><h2>Elevating your movie time, one refresh at a time</h2></section>
+
     <main>
     <section id="genre-container" class="">
+        <!-- Slogan -->
+        <section><h2>Elevating your movie time, one refresh at a time</h2></section>
+
         <!-- Action Icon -->
         <button genre-id='28' onclick="getSuggestion(this); hideSections()">
         <figure id='action'><img class='size blur' src="Assets/GIFs/Mission impossible - Action.gif" alt="spy descending from ceiling with gadget" />
@@ -151,26 +153,33 @@
     </section>
 
     <section id="results-container" class="hidden">
-        <!-- Pulls random movie w/ its poster and summary based on selected genre and random drink w/ image and ingredients -->
+        <section><h2>Unwind, Sip, and Enjoy the Flick!</h2></section>
+
+        <!-- Pulls random movie w/ its poster and summary based on selected genre -->
         <section id="movies" class="title">
         <p id="chosenMovie"></p>
         <img id="moviePoster">
         <p id="movie-overview"></p>
         </section>
         <br>
+        <!-- Pulls random drink w/ image and instructions -->
         <section id="drinks" class="title">
         <p id="chosenDrink"></p>
         <img id="drinkPhoto">
-        <p id="drink-ingredients"></p>
+        <ul id="drink-ingredients"></ul>
         <p id="drink-instructions"></p>
             </section>
     </section>
     </main>
 
+    <!-- Footer  -->
     <footer class="text-center py-4">
         © 2023 ReelRefreshers
     </footer>
+
+    <!-- Holds the function that hides/unihides sections -->
     <script src="style-page.js"></script>
+    <!-- Holds the functions for the APIs -->
     <script src="script.js"></script>
 
 </body>

@@ -55,12 +55,27 @@ function fetchRandomDrink() {
       const chosenDrinkEl = document.getElementById("chosenDrink");
       chosenDrinkEl.textContent = `Drink: ${chosenDrink}`;
 
-      // Need to figure out how to implement
-      //  Displays drink ingridents
-      // const drinkIngred = document.getElementById('drink-ingredients')
+      // Create loop to cycle through up to 15 ingredients
+      for (let i=1; i < 16; ++i) {
+      
+        // Creates a list for ingredients
+      const drinkIngreds = document.createElement('li');
+      console.log(i)
+
+      // Breaks loop of adding empty measurements
+      if (data.drinks[0][`strMeasure${i}`] == null) {
+        break;
+      }
+
+      // Displays ingredients and measurements for drinks
+      drinkIngreds.innerHTML = data.drinks[0][`strMeasure${i}`] + ': ' + data.drinks[0][`strIngredient${i}`];
+
+      const IngredSection = document.getElementById("drink-ingredients");
+      IngredSection.append(drinkIngreds);
+      }
 
       // Displays instructions
-      const drinkInstruct = document.getElementById('drink-instructions')
+      const drinkInstruct = document.getElementById('drink-instructions');
       drinkInstruct.textContent = `Instructions: ${data.drinks[0].strInstructions}`;
     })
     .catch(error => {
@@ -68,8 +83,8 @@ function fetchRandomDrink() {
     });
 }
 
-// Once one of the buttons are clicked the genre id linked to the button will be display
-// the chosen genre w/ drink
+// Once one of the buttons are clicked the genre id linked to each button will display
+// the chosen genre w/ a drink: name, ingredients, measurements and instructions
 function getSuggestion(button) {
   const selectedGenre = button.getAttribute('genre-id');
 

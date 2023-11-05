@@ -173,7 +173,7 @@ figure {
 }
 
 #chosenDrink {
-    margin-top: 300px;
+    margin-top: 400px;
 }
 
 .title {
@@ -184,6 +184,11 @@ figure {
 #chosenMovie, #movie-overview {
     display: flex;
     flex-direction: row;
+}
+
+#drink-ingredients {
+    font-size: 23px;
+    text-decoration: underline;
 }
 
 p {
@@ -203,7 +208,7 @@ p {
     }
 
     #chosenDrink {
-        margin-top: 230px;
+        margin-top: 220px;
     }
 }
 
@@ -221,12 +226,16 @@ p {
         font-size: 25px;
     }
 
+    #drink-ingredients {
+        font-size: 20px;
+    }
+
     p {
         font-size: 18px;
     }
 
     #chosenDrink {
-        margin-top: 95px;
+        margin-top: 110px;
     }
 }
 
@@ -237,6 +246,10 @@ p {
 
     p {
         font-size: 13px;
+    }
+
+    #drink-ingredients {
+        font-size: 15px;
     }
 
     .text-6xl {
