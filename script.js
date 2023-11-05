@@ -51,9 +51,17 @@ function fetchRandomDrink() {
       // Displays drink photot
       const drinkPhotoEl = document.getElementById('drinkPhoto')
       drinkPhotoEl.src = drinkImg
-      // Displays instructions to make drink
+      // Displays name of drink
       const chosenDrinkEl = document.getElementById("chosenDrink");
-      chosenDrinkEl.textContent = `Drink: ${chosenDrink} - ${data.drinks[0].strInstructions}`;
+      chosenDrinkEl.textContent = `Drink: ${chosenDrink}`;
+
+      // Need to figure out how to implement
+      //  Displays drink ingridents
+      // const drinkIngred = document.getElementById('drink-ingredients')
+
+      // Displays instructions
+      const drinkInstruct = document.getElementById('drink-instructions')
+      drinkInstruct.textContent = `Instructions: ${data.drinks[0].strInstructions}`;
     })
     .catch(error => {
       console.error('Error:', error);

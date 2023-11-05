@@ -19,10 +19,10 @@ When you open ReelRefreshers, you will be presented with a list of movie genres.
 
 ## Credits
 
-Mykala Hoebermann - github.com/mykaomas
-Elizabeth Padron - github.com/elipadron
-Taylor Reyes - github.com/BloomNDecay
-Maura Salgo - github.com/maurasal
+*Mykala Hoebermann - github.com/mykaomas
+*Elizabeth Padron - github.com/elipadron
+*Taylor Reyes - github.com/BloomNDecay
+*Maura Salgo - github.com/maurasal
 Use of EdX Xpert Learning AI to  make sure code was concise and readable.
 
 ## License
