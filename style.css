@@ -157,13 +157,19 @@ figure {
     box-shadow: 0 20px 30px whitesmoke;
 }
 
-section#drinks {
-    margin-top: 500px;
+#chosenMovie {
+    margin-top: 3%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#drinks {
+    margin-top: 300px;
     margin-left: 5%;
 }
 
 p {
-    font-size: 25px;
+    font-size: 20px;
     font-style: italic;
     padding: 10px;
     font-family:Arial, Helvetica, sans-serif;

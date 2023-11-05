@@ -6,9 +6,10 @@ function getRandomNumber(max) {
   return Math.floor(Math.random() * max) + 1;
 }
 
-function fetchMovieData(genre) {
+function fetchMovieData(genreId) {
+
   const pageNumber = getRandomNumber(20);
-  const url = `https://api.themoviedb.org/3/discover/movie?with_genres=${genre}&page=${pageNumber}&language=en-US&api_key=d999ebd26747e0c3f46ea86ac84f73f3`;
+  const url = `https://api.themoviedb.org/3/discover/movie?with_genres=${genreId}&page=${pageNumber}&language=en-US&api_key=d999ebd26747e0c3f46ea86ac84f73f3`;
 
   return fetch(url)
     .then(response => response.json())
@@ -16,6 +17,8 @@ function fetchMovieData(genre) {
       const chosenMovie = data.results[2];
       const moviePosterEl = document.getElementById('moviePoster')
       const posterSrc = 'https://image.tmdb.org/t/p/w185'
+
+      // Display movie poster
       moviePosterEl.src = posterSrc + chosenMovie.poster_path
       console.log(chosenMovie.title);
       console.log(chosenMovie.poster_path);
@@ -23,6 +26,10 @@ function fetchMovieData(genre) {
 
       const chosenMovieEl = document.getElementById('chosenMovie');
       chosenMovieEl.textContent = `Movie: ${chosenMovie.title}`;
+
+      // Display summary of movie
+      const movieOverview = document.getElementById('movie-overview');
+      movieOverview.textContent = `Summary: ${chosenMovie.overview}`;
     })
     .catch(error => {
       console.error('Error:', error);
@@ -49,12 +56,9 @@ function fetchRandomDrink() {
     });
 }
 
-function getSuggestion() {
-  const selectedGenre = genreSelect.value;
+function getSuggestion(button) {
+  const selectedGenre = button.getAttribute('genre-id');
 
-  fetchMovieData(selectedGenre)
-    .then(() => fetchRandomDrink())
-    .catch(error => {
-      console.error('Error:', error);
-    });
+  fetchMovieData(selectedGenre);
+  fetchRandomDrink();
 }
