@@ -38,7 +38,6 @@ figure {
     color: white;
     font-weight: bold;
     text-shadow: 0 30px 50px rgba(0, 0, 0, 1);
-    mix-blend-mode: overlay;
 }
 
 /* Controls the positioning of each of the genre titles */
@@ -151,23 +150,27 @@ figure {
 
 /* Styling for the results container */
 #moviePoster, #drinkPhoto {
-    width: 300px;
-    height: 400px;
+    width: 400px;
+    height: 500px;
     margin: 5%;
     border-radius: 10px;
     box-shadow: 0 20px 30px whitesmoke;
 }
 
-section#drinks {
-    margin-top: 500px;
+#chosenMovie {
+    margin-top: 3%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#drinks {
+    margin-top: 300px;
     margin-left: 5%;
 }
 
 p {
-    font-size: 25px;
-    font-style: italic;
+    font-size: 20px;
     padding: 10px;
-    font-family:Arial, Helvetica, sans-serif;
 }
 
 /* Adjust elements to accomodate smaller screen sizes */
@@ -175,16 +178,57 @@ p {
     .text-6xl {
         font-size: 50px;
     }
+
+    #moviePoster, #drinkPhoto {
+        width: 250px;
+        height: 500px;
+    }
 }
 
 @media screen and (max-width: 564px) {
     .text-6xl {
         font-size: 40px;
     }
+
+    #moviePoster, #drinkPhoto {
+        width: 200px;
+        height: 400px;
+    }
+
+    #chosenMovie {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    #drinks {
+        margin-top: 100px;
+        margin-left: 5%;
+    }
 }
 
 @media screen and (max-width: 470px) {
+    #chosenMovie {
+        font-size: 17px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
     .text-6xl {
         font-size: 25px;
+    }
+
+    #moviePoster, #drinkPhoto {
+        width: 150px;
+        height: 300px;
+    }
+
+    #drinks {
+        margin-top: 200px;
+        margin-left: 5%;
     }
 }
