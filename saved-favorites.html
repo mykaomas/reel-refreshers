@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved Favorites - ReelRefreshers</title>
+</head>
+<body>
+    <!-- Navigation bar (you can reuse your existing navbar) -->
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+
+    <!-- Content for displaying saved favorites -->
+    <h1>Your Saved Favorites</h1>
+    <ul id="favorites-list">
+        <!-- Saved favorites will be displayed here using JavaScript -->
+    </ul>
+
+    <script>
+        // JavaScript code to retrieve and display saved favorites from local storage
+        const favoritesList = document.getElementById('favorites-list');
+
+        // Load saved favorites from local storage
+        const savedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
+        // Display the saved favorites on the page
+        for (const favoritePairing of savedFavorites) {
+            const listItem = document.createElement('li');
+            listItem.textContent = `Movie: ${favoritePairing.movie}, Cocktail: ${favoritePairing.cocktail}`;
+            favoritesList.appendChild(listItem);
+        }
+    </script>
+</body>
+</html>
