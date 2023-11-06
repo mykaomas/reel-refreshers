@@ -24,12 +24,27 @@
     <!-- Styling for banner -->
     <header id='banner' class="text-center py-8">
         <h1 class="text-6xl font-bold tracking-wider bg-gradient-to-r from-pink-500 via-yellow-500 to-green-500 p-4 inline-block shadow-lg transform rotate-3">ReelRefreshers</h1>
+        <nav class="header-nav">
+            <a href="index.html" class="p-2 px-4 rounded-lg">Home</a>
+            <a href="saved-favorites.html" class="nav-saveditems">Saved Favorites</a>
+            </nav>
+   
     </header>
-
+    <div id="custom-notification" class="custom-notification">
+        <p id="notification-text"></p>
+      </div>
+      
     <main>
     <section id="genre-container" class="">
         <!-- Slogan -->
         <section><h2>Elevating your movie time, one refresh at a time</h2></section>
+        <section>
+            <h3>Indulge in Movie Mixology! Elevate your movie night with our app, designed to whisk you away on a cinematic and cocktail adventure. 
+                Whether you're planning a cozy night in or a virtual movie night with friends, we've got you covered. 
+                Simply pick your movie genre, and let us shake up a random cocktail that perfectly complements your cinematic choice. Say goodbye to the guesswork and hello to the perfect pairing – because every movie deserves a matching cocktail. 
+                Cheers to unforgettable movie moments and delicious sips! </h3></section>
+                <section> <h4> Choose your movie genre below! </h4></section>
+    
 
         <!-- Action Icon -->
         <button genre-id='28' onclick="getSuggestion(this); hideSections()">
@@ -152,8 +167,12 @@
         </figure></button>
     </section>
 
-    <section id="results-container" class="hidden">
+  
+
         <section><h2>Unwind, Sip, and Enjoy the Flick!</h2></section>
+        <section id="results-container" class="hidden">
+            <section id="movies">
+                <button id="save-favorite">Save to Favorites</button>
 
         <!-- Pulls random movie w/ its poster and summary based on selected genre -->
         <section id="movies" class="title">
@@ -162,6 +181,8 @@
         <p id="movie-overview"></p>
         </section>
         <br>
+
+
         <!-- Pulls random drink w/ image and instructions -->
         <section id="drinks" class="title">
         <p id="chosenDrink"></p>
@@ -170,12 +191,29 @@
         <p id="drink-instructions"></p>
             </section>
     </section>
+
+    <section id="saved-favorites-section" style="display: none;">
+        <h2> Your Saved Favorites</h2>
+            <ul id="favorites-list"></ul>
+        </section>   
+        </section>
     </main>
 
     <!-- Footer  -->
     <footer class="text-center py-4">
         © 2023 ReelRefreshers
     </footer>
+
+    <script>
+        //  saved favorites button element
+        const savedFavoritesButton = document.getElementById('saved-favorites-button');
+      
+        //  event listener to the button
+        savedFavoritesButton.addEventListener('click', function() {
+          // redirecting to the saved favorites page
+          window.location.href = 'saved-favorites.html';
+        });
+      </script>
 
     <!-- Holds the function that hides/unihides sections -->
     <script src="style-page.js"></script>
