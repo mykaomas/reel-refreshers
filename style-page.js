@@ -2,7 +2,7 @@
 function hideSections() {
     const resultSec = document.getElementById('results-container')
     const genreSec = document.getElementById('genre-container');
-    console.log('work');
+    console.log('It is now hidden');
         // unhides results container by removing hidden element to class
         resultSec.classList.remove('hidden');
         // Hides genre container by adding hidden element to class
