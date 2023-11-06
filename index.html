@@ -167,10 +167,8 @@
         </figure></button>
     </section>
 
-  
-
-        <section><h2>Unwind, Sip, and Enjoy the Flick!</h2></section>
         <section id="results-container" class="hidden">
+        <section><h2>Unwind, Sip, and Enjoy the Flick!</h2></section>
             <section id="movies">
                 <button id="save-favorite">Save to Favorites</button>
 
@@ -179,15 +177,15 @@
         <p id="chosenMovie"></p>
         <img id="moviePoster">
         <p id="movie-overview"></p>
+        <p id="release-date"></p>
         </section>
         <br>
-
-
         <!-- Pulls random drink w/ image and instructions -->
         <section id="drinks" class="title">
         <p id="chosenDrink"></p>
         <img id="drinkPhoto">
         <ul id="drink-ingredients"></ul>
+        <p id="drink-glass"></p>
         <p id="drink-instructions"></p>
             </section>
     </section>
@@ -207,18 +205,19 @@
     <script>
         //  saved favorites button element
         const savedFavoritesButton = document.getElementById('saved-favorites-button');
-      
         //  event listener to the button
         savedFavoritesButton.addEventListener('click', function() {
           // redirecting to the saved favorites page
-          window.location.href = 'saved-favorites.html';
+        window.location.href = 'saved-favorites.html';
         });
-      </script>
+    </script>
 
+    <!-- Holds the functions for local storage for favorites -->
+    <script src="JavaScript/local-storage.js"></script>
     <!-- Holds the function that hides/unihides sections -->
-    <script src="style-page.js"></script>
+    <script src="JavaScript/style-page.js"></script>
     <!-- Holds the functions for the APIs -->
-    <script src="script.js"></script>
+    <script src="JavaScript/script.js"></script>
 
 </body>
 
