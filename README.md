@@ -23,7 +23,10 @@ but find that you are too indecisive or uncreative to come up with the agenda, u
 There is no installation required to use this app. If you follow the link below, you can open ReelRefreshers in your browser. 
 
 ## Demo
-(add image of web page the main page and results page)
+![main page of site](./Assets/GIFs/Screenshot%202023-11-06%20184924.png)
+![Drink results](./Assets/GIFs/Screenshot%202023-11-06%20185118.png)
+![main page of site](./Assets/GIFs/Screenshot%202023-11-06%20185137.png)
+
 
 You can see a live demo of ReelRefreshers (put link here).
 
